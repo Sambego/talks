@@ -82,20 +82,27 @@ time {
  */
 
 .button {
-    transition: background .4s ease-in-out;
-
     position: relative;
     overflow: hidden;
 
     display: inline-block;
-    padding: 1rem 1.5rem 1rem 6rem;
+    padding: 1rem 2.5rem;
 
-    background: lighten($secondary, 20%);
+    background: transparent;
 
-    border-bottom: .6rem solid $primary;
+    border: .3rem solid $primary;
 
     font-size: 3.6rem;
     color: $primary;
+
+    &__inner {
+        transition: transform .4s ease-in-out;
+
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+    }
 
     .icon {
         display: inline-block;
@@ -109,7 +116,7 @@ time {
 
         position: absolute;
         top: -3rem;
-        left: -2rem;
+        left: -6rem;
 
         width: 0;
         height: 0;
@@ -120,10 +127,12 @@ time {
     }
 
     &:hover {
-        background: lighten($secondary, 15%);
+        .button__inner {
+            transform: translate3d(1rem, 0, 0);
+        }
 
         &::after {
-            left: -1rem;
+            left: -3rem;
         }
     }
 }
