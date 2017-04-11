@@ -53,6 +53,11 @@ html {
 }
 
 .container {
+    animation-duration: 0.4s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+
     position: relative;
     z-index: 1;
 
