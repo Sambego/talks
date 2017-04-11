@@ -88,12 +88,10 @@ time {
     display: inline-block;
     padding: 1rem 2.5rem;
 
-    background: transparent;
-
-    border: .3rem solid $primary;
+    background: $secondary;
 
     font-size: 3.6rem;
-    color: $primary;
+    color: $white;
 
     &__inner {
         transition: transform .4s ease-in-out;
@@ -123,7 +121,7 @@ time {
 
         border-style: solid;
         border-width: 6.2rem 0 0 6.2rem;
-        border-color: transparent transparent transparent $secondary;
+        border-color: transparent transparent transparent $primary;
     }
 
     &:hover {
