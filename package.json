@@ -30,7 +30,7 @@
     "webpack-dotenv-plugin": "^2.0.0"
   },
   "scripts": {
-    "build:prod": "NODE_ENV=production rm -rf dist/ && webpack",
+    "build:prod": "rm -rf dist/ && webpack -p --env production",
     "build:dev": "webpack --watch --progress"
   },
   "dependencies": {
