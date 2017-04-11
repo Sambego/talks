@@ -1,0 +1,21 @@
+/*
+ * Base styles
+ */
+
+.social {
+    padding: 1rem 1.5rem;
+
+    background: $white;
+
+    text-align: right;
+
+    &__link {
+        transition: transform .4s ease-in-out;
+
+        display: inline-block;
+
+        &:hover {
+            transform: translate3d(0, -.4rem, 0);
+        }
+    }
+}

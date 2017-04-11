@@ -1,0 +1,40 @@
+/*
+ * About me component
+ */
+
+.me {
+    position: relative;
+
+    margin: 0 0 4rem 0;
+
+    &__image {
+        width: 100%;
+
+        box-shadow: 0 0 1rem 0 rgba($black, .5);
+    }
+
+    &__name {
+        position: absolute;
+        bottom: 20%;
+        right: -20rem;
+
+        width: 16rem;
+
+        font-size: 4.8rem;
+        font-weight: bold;
+        color: $secondary;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: -2rem;
+            right: 0;
+
+            width: 26rem;
+            height: 1rem;
+
+            background: $primary;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+/*
+ * Base styles
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    overflow-x: hidden;
+
+    font-size: 10px;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        width: 0;
+        height: 0;
+
+        border-style: solid;
+        border-width: 40rem 60rem 0 0;
+        border-color: $secondary transparent transparent transparent;
+    }
+
+    &::after {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        z-index: 0;
+
+        background: transparent;
+
+        border-width: 0 0 40rem 60rem;
+        border-color: transparent transparent $primary transparent;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 80rem;
+    padding: 4rem 27rem 4rem 0;
+    margin: 0 auto;
+}
+
+section {
+    padding: 3rem 0 4rem 2rem;
+    margin: 0 0 6rem 0;
+
+    background: $white;
+
+    &:last-child {
+        margin: 0 0 4rem 0;
+    }
+}

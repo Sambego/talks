@@ -1,0 +1,40 @@
+/*
+ * Icons
+ */
+
+.icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &--envelope {
+        background: transparent url('../icons/envelope.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--globe {
+        background: transparent url('../icons/globe.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--slides {
+        background: transparent url('../icons/slides.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--movie {
+        background: transparent url('../icons/video.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--twitter {
+        background: transparent url('../icons/twitter.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--github {
+        background: transparent url('../icons/github.svg') 50% 50% / 2rem no-repeat;
+    }
+
+    &--big {
+        width: 4rem;
+        height: 2.9rem;
+
+        background-size: 3.9rem;
+    }
+}
