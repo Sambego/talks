@@ -46,6 +46,9 @@ const createConfig = (env = 'development') => {
             }, {
                 context: './src/images/',
                 from: '**/*',
+            }, {
+                context: './src/favicon/',
+                from: '**/*',
             }]),
         ],
     };
