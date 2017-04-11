@@ -41,6 +41,11 @@
             bottom: 20%;
             left: auto;
             right: -20rem;
+
+            &::after {
+                left: auto;
+                right: 0;
+            }
         }
     }
 }
