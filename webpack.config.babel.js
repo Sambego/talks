@@ -51,7 +51,7 @@ const createConfig = (env = 'development') => {
                 from: '**/*',
             }, {
                 from: "./_redirects"
-            }]]),
+            }]),
         ],
     };
 };
