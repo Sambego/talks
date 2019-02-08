@@ -49,7 +49,9 @@ const createConfig = (env = 'development') => {
             }, {
                 context: './src/favicon/',
                 from: '**/*',
-            }]),
+            }, {
+                from: "./_redirects"
+            }]]),
         ],
     };
 };
