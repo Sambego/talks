@@ -34,6 +34,6 @@
     "build:dev": "webpack --watch --progress"
   },
   "dependencies": {
-    "node-sass": "^4.5.2"
+    "node-sass": "^4.13.1"
   }
 }
